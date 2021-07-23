@@ -9,7 +9,7 @@
 			{ 
 				if(responseText === "1")
 					alert("Datos guardados :)");
-			}, "../controllers/persona.php", body);
+			}, "controllers/persona.php", body);
 	});
 	
 	document.getElementById("reset").addEventListener("click", (event) => 
@@ -29,7 +29,7 @@
 			{ 
 				if(responseText === "1")
 					alert("Persona eliminada :)");
-			}, "../controllers/persona.php", body);
+			}, "controllers/persona.php", body);
 	});
 
 	document.getElementById("consultar_sueldo").addEventListener("click", (event) => 
@@ -46,10 +46,10 @@
 					ajax.sendRequest(function (responseText)
 					{
 						alert(responseText);
-					}, "../controllers/sueldo_persona.php", `cod_zona=${this.className}`);
+					}, "controllers/sueldo_persona.php", `cod_zona=${this.className}`);
 				};
 			}
-		}, "../controllers/sueldos_sector.php", null);
+		}, "controllers/sueldos_sector.php", null);
 	});
 	
 	(function requestSectors()
@@ -59,7 +59,7 @@
 	
 	function requestZonas()
 	{
-		ajax.sendRequest(showZonas, "../controllers/zona.php", `idsector=${listSector.selectedIndex}`);
+		ajax.sendRequest(showZonas, "controllers/zona.php", `idsector=${listSector.selectedIndex}`);
 	}
 	
 	function showSectors(responseText)
