@@ -18,5 +18,7 @@ Luego ejecute este comando (reemplace en `username` por el nombre de usuario que
 ```bash
 mysql -u username -p dbsector < dbsector.sql 
 ```
+
+**Nota:** También debe de modificar la [cadena de conexión](https://github.com/MrDave1999/CRUD-PHP-PURO/blob/main/models/conexion.php#L6) (agregue el nombre de usuario y la contraseña correspondiente).
   
   
