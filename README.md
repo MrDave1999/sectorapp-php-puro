@@ -1,24 +1,29 @@
-# CRUD-PHP-PURO
-Esta aplicación web solo es para fines de aprendizaje.
+# sectorapp-php-puro
+*sectorapp* es una aplicación web que permite el ingreso y eliminación de información de personas y también tiene una opción para poder consultar los sueldos por sector y zona.
+
+Esta aplicación esta hecha para fines de aprendizaje, así que de seguro tiene vulnerabilidades y malas practicas de programación.
 
 ## Instalación
 
-Para poder ejecutar la app se necesita tener:
-
-- Apache HTTP
-- MySQL Server 8.0
-- Intérprete PHP
-  - Hay que habilitar la extensión `mysqli`
-  
-Para **importar** `dbsector.sql` necesita primero crear la base de datos:
-```sql
-CREATE DATABASE dbsector;
+**1.** Clone el repositorio:
 ```
-Luego ejecute este comando (reemplace en `username` por el nombre de usuario que use, por ejemplo: `root`):
-```bash
-mysql -u username -p dbsector < dbsector.sql 
+git clone https://github.com/MrDave1999/sectorapp-php-puro.git
 ```
+**2.** Cambie de directorio:
+```
+cd CRUD-PHP-PURO
+```
+**3.** Copie el contenido de `.env.example` en `.env`:
+```
+cp .env.example .env
+```
+**Nota:** Si en Windows no funciona el comando `cp`, use `xcopy`.
 
-**Nota:** También debe de modificar la [cadena de conexión](https://github.com/MrDave1999/CRUD-PHP-PURO/blob/main/models/conexion.php#L6) (agregue el nombre de usuario y la contraseña correspondiente).
-  
-  
+**4.** Construya la imagen e inicie los servicios:
+```
+docker-compose up --build -d
+```
+**5.** Acceda a la aplicación con esta URL:
+```
+http://localhost:8080/
+```
