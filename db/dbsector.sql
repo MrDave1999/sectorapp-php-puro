@@ -42,7 +42,7 @@ CREATE TABLE `tbl_persona` (
 
 LOCK TABLES `tbl_persona` WRITE;
 /*!40000 ALTER TABLE `tbl_persona` DISABLE KEYS */;
-INSERT INTO `tbl_persona` VALUES (1,'David Lopez','1999-08-27',1,200,500),(3,'Roberto Placencio','1999-08-05',2,303,150),(2,'Guillermo Rivera','1999-12-25',3,400,240),(4,'David Lastre','1997-05-23',2,302,1000),(5,'Derian Arias','1998-01-02',2,301,542),(6,'Joel Delgado','1998-12-06',1,203,630),(7,'Josias Navarra','1999-10-25',1,200,611),(8,'Ronny Andres','1998-12-01',2,303,1100),(9,'Andrea Gonzale','1999-12-01',3,400,340),(10,'David Hernandez','1999-01-01',2,302,758),(11,'Irina Macias','1999-01-01',2,301,700),(12,'Abel Gronul','1995-02-01',1,203,500),(13,'Jose Ramirez','1940-02-10',1,203,240),(14,'David Roman','1999-08-27',1,200,254.3),(14,'David Roman','1999-10-27',2,300,254.45);
+INSERT INTO `tbl_persona` VALUES (1,'David Lopez','1999-08-27',1,200,500),(2,'Roberto Placencio','1999-08-05',2,303,150),(3,'Guillermo Rivera','1999-12-25',3,400,240),(4,'David Lastre','1997-05-23',2,302,1000),(5,'Derian Arias','1998-01-02',2,301,542),(6,'Joel Delgado','1998-12-06',1,203,630),(7,'Josias Navarra','1999-10-25',1,200,611),(8,'Ronny Andres','1998-12-01',2,303,1100),(9,'Andrea Gonzale','1999-12-01',3,400,340),(10,'David Hernandez','1999-01-01',2,302,758),(11,'Irina Macias','1999-01-01',2,301,700),(12,'Abel Gronul','1995-02-01',1,203,500),(13,'Jose Ramirez','1940-02-10',1,203,240),(14,'David Roman','1999-08-27',1,200,254.3),(15,'David Roman','1999-10-27',2,300,254.45);
 /*!40000 ALTER TABLE `tbl_persona` ENABLE KEYS */;
 UNLOCK TABLES;
 
