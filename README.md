@@ -1,7 +1,7 @@
 # sectorapp-php-puro
 *sectorapp* es una aplicación web que permite el ingreso y eliminación de información de personas y también tiene una opción para poder consultar los sueldos por sector y zona.
 
-Esta aplicación esta hecha para fines de aprendizaje, así que de seguro tiene vulnerabilidades y malas practicas de programación.
+Esta aplicación esta hecha para fines de aprendizaje, así que de seguro tiene vulnerabilidades y malas prácticas de programación.
 
 ## Instalación
 
@@ -11,7 +11,7 @@ git clone https://github.com/MrDave1999/sectorapp-php-puro.git
 ```
 **2.** Cambie de directorio:
 ```
-cd CRUD-PHP-PURO
+cd sectorapp-php-puro
 ```
 **3.** Copie el contenido de `.env.example` en `.env`:
 ```
