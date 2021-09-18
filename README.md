@@ -13,17 +13,33 @@ git clone https://github.com/MrDave1999/sectorapp-php-puro.git
 ```
 cd sectorapp-php-puro
 ```
-**3.** Copie el contenido de `.env.example` en `.env`:
+**3.** Instale las dependencias del proyecto:
+
+En Linux:
+```
+docker run --rm -it -v $PWD:/app composer install
+```
+En Windows:
+```
+docker run --rm -it -v %cd%:/app composer install
+```
+
+**4.** Copie el contenido de `.env.example` en `.env`:
+
+En Linux:
 ```
 cp .env.example .env
 ```
-**Nota:** Si en Windows no funciona el comando `cp`, use `xcopy`.
+En Windows:
+```
+xcopy .env.example .env
+```
 
-**4.** Construya la imagen e inicie los servicios:
+**5.** Construya la imagen e inicie los servicios:
 ```
 docker-compose up --build -d
 ```
-**5.** Acceda a la aplicación con esta URL:
+**6.** Acceda a la aplicación de esta forma:
 ```
 http://localhost:8080/
 ```
